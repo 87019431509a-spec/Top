@@ -1,0 +1,30 @@
+/* PAZLIX reference v4 — secondary screens */
+.detail-card{padding:20px!important;border-radius:28px!important;background:#fff!important}
+.detail-profile{grid-template-columns:92px minmax(0,1fr)!important;gap:16px!important;margin-bottom:18px!important;align-items:center!important}.detail-profile .client-avatar{width:86px!important;height:86px!important;border-radius:24px!important;background:#f3edfb!important;color:#7359aa!important;font-size:18px!important;font-weight:800!important}.detail-profile h2{font-size:27px!important;font-weight:800!important;line-height:1.08!important}.detail-profile .subtitle{font-size:15px!important}
+.detail-list{border-top:1px solid #eee8e1!important}.detail-line{grid-template-columns:50px 1fr!important;gap:12px!important;padding:16px 0!important;border-bottom:1px solid #eee8e1!important;align-items:center!important}.detail-line .ic{width:46px!important;height:46px!important;border-radius:16px!important;background:#fff2f3!important;color:#d86c7a!important;box-shadow:0 6px 14px rgba(45,39,34,.04)!important}.detail-line:nth-child(2) .ic{background:#eef6fb!important;color:#6c96b5!important}.detail-line:nth-child(3) .ic{background:#fff4e7!important;color:#c98d49!important}.detail-line:nth-child(4) .ic{background:#eef7ef!important;color:#6f9d79!important}.detail-line:nth-child(5) .ic{background:#f4eefb!important;color:#8d70b8!important}.detail-line:nth-child(6) .ic{background:#fff7e7!important;color:#b58b41!important}.detail-line strong{font-size:14px!important;color:#7e828b!important;font-weight:700!important}.detail-line .value{grid-column:2!important;text-align:left!important;font-size:17px!important;font-weight:650!important;color:#30343b!important;line-height:1.4!important}.notice{margin-top:17px!important;padding:16px!important;border-radius:21px!important;background:#fff7e8!important;border-color:#f0dfbd!important}.notice strong{font-size:16px!important}.notice small{font-size:13px!important}.detail-actions{gap:10px!important;margin-top:16px!important}.detail-actions .btn{min-height:58px!important;font-size:16px!important;border-radius:18px!important}
+
+/* Services / contacts / masters / Telegram / consultant forms */
+.form-card{background:#fff!important;box-shadow:0 12px 30px rgba(45,39,34,.06)!important}.form-grid label{gap:8px!important}.form-grid span{color:#5c616a!important;font-weight:750!important}.form-grid input,.form-grid textarea,.form-grid select{box-shadow:inset 0 1px 0 rgba(255,255,255,.8)!important;transition:border-color .15s ease,box-shadow .15s ease!important}.form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus{border-color:#e8a9b1!important;box-shadow:0 0 0 4px rgba(233,120,134,.10)!important;outline:none!important}.upload-box{background:#fff8f3!important;border:1.5px dashed #d9cec4!important;color:#8a8179!important}.upload-box span{color:#d57582!important}.upload-box strong{font-size:18px!important;color:#3c4149!important}.upload-box small{font-size:14px!important}
+
+/* Portfolio */
+#gallery{gap:12px!important}#gallery>div{border-radius:22px!important;box-shadow:0 10px 24px rgba(45,39,34,.075)!important;border:4px solid #fff!important}
+
+/* Telegram screen visual accents */
+body:has(input[type='password']) .form-card{background:#f7fbff!important;border-color:#ddeaf3!important}body:has(input[type='password']) .form-grid label:first-child input{background:#edf7ef!important;color:#5c8e68!important;font-weight:800!important}body:has(input[type='password']) input[type='password']{background:#fff!important;border-color:#d9e6ef!important}
+
+/* Consultant screen */
+body:has(textarea) .form-card textarea{line-height:1.52!important}.form-card>.btn.rose{width:100%!important;margin-top:18px!important}
+
+/* Drawer */
+#demoDrawer aside{border-radius:0 28px 28px 0!important;background:#fffaf6!important}#demoDrawer aside .btn{justify-content:flex-start!important;background:#fff!important;border-color:#eee8e1!important;min-height:58px!important}#demoDrawer aside .btn:nth-child(2){background:#eef7ef!important}#demoDrawer aside .btn:nth-child(3){background:#fff4e7!important}#demoDrawer aside .btn:nth-child(4){background:#fff1f3!important}#demoDrawer aside .btn:nth-child(5){background:#eef6fb!important}#demoDrawer aside .btn:nth-child(6){background:#f4eefb!important}
+
+/* Toast */
+.toast{background:#292b31!important;color:#fff!important;padding:14px 18px!important;border-radius:16px!important;font-size:14px!important;box-shadow:0 14px 34px rgba(27,24,22,.20)!important}
+
+/* bottom sheet */
+.bottom-sheet{background:#fffaf6!important;border-radius:30px 30px 0 0!important;padding-left:18px!important;padding-right:18px!important}.sheet-handle{background:#d7d0c9!important}.sheet-title{font-size:26px!important;font-weight:800!important}.sheet-sub{font-size:15px!important;color:#7a7f88!important}.sheet-form{gap:12px!important}.sheet-form label{font-size:14px!important;color:#555a63!important}.sheet-form input,.sheet-form select,.sheet-form textarea{min-height:56px!important;border-radius:17px!important;border-color:#e5ded7!important;background:#fff!important;font-size:16px!important}.sheet-actions .btn{border-radius:18px!important;min-height:58px!important}
+
+@media(max-width:420px){
+ .detail-card{padding:17px!important}.detail-profile{grid-template-columns:78px minmax(0,1fr)!important}.detail-profile .client-avatar{width:74px!important;height:74px!important}.detail-profile h2{font-size:24px!important}.detail-line{grid-template-columns:46px 1fr!important}.detail-line .ic{width:42px!important;height:42px!important}.detail-line .value{font-size:16px!important}.detail-actions .btn{min-height:56px!important}
+ .form-card{padding:17px!important}.form-grid input,.form-grid textarea,.form-grid select{font-size:16px!important}.upload-box{min-height:200px!important}
+}
