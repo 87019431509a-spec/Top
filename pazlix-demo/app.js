@@ -1,6 +1,7 @@
 const loadCss=(href)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l)};
 loadCss('polish.css');
 loadCss('mobile-pro.css');
+loadCss('reference-v4.css');
 
 const $=(q,e=document)=>e.querySelector(q),$$=(q,e=document)=>[...e.querySelectorAll(q)];
 
@@ -9,7 +10,7 @@ function toast(text){let t=$('#toast');if(!t){t=document.createElement('div');t.
 function previewSingle(inputId,previewId){const input=document.getElementById(inputId),preview=document.getElementById(previewId);if(!input||!preview)return;input.addEventListener('change',()=>{const f=input.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>preview.innerHTML=`<img src="${r.result}" alt="">`;r.readAsDataURL(f)})}
 ['profilePhoto','servicePhoto','masterPhoto','tgCover','homePhoto'].forEach(id=>previewSingle(id,{profilePhoto:'profilePreview',servicePhoto:'servicePreview',masterPhoto:'masterPreview',tgCover:'tgCoverPreview',homePhoto:'homePhotoPreview'}[id]));
 
-$$('.hamburger').forEach(btn=>btn.addEventListener('click',()=>{let d=$('#demoDrawer');if(d){d.remove();return}d=document.createElement('div');d.id='demoDrawer';d.innerHTML=`<div style="position:fixed;inset:0;background:rgba(20,22,28,.28);z-index:79" data-close></div><aside style="position:fixed;z-index:80;left:0;top:0;bottom:0;width:min(350px,88vw);background:#fff;padding:30px 20px;box-shadow:20px 0 50px rgba(0,0,0,.14)"><div style="font-size:28px;font-weight:800;letter-spacing:.12em;margin-bottom:28px">PAZLIX</div><div style="display:grid;gap:10px"><a class="btn" href="index.html">Главная</a><a class="btn" href="calendar.html">Календарь</a><a class="btn" href="requests.html">Заявки</a><a class="btn" href="ai.html">AI-помощник</a><a class="btn" href="history.html">История</a><a class="btn" href="profile.html">Профиль</a></div></aside>`;document.body.appendChild(d);d.querySelector('[data-close]').onclick=()=>d.remove()}));
+$$('.hamburger').forEach(btn=>btn.addEventListener('click',()=>{let d=$('#demoDrawer');if(d){d.remove();return}d=document.createElement('div');d.id='demoDrawer';d.innerHTML=`<div style="position:fixed;inset:0;background:rgba(20,22,28,.28);z-index:79" data-close></div><aside style="position:fixed;z-index:80;left:0;top:0;bottom:0;width:min(350px,88vw);background:#fffaf6;padding:30px 20px;box-shadow:20px 0 50px rgba(0,0,0,.14)"><div style="font-size:28px;font-weight:800;letter-spacing:.12em;margin-bottom:28px">PAZLIX</div><div style="display:grid;gap:10px"><a class="btn" href="index.html">Главная</a><a class="btn" href="calendar.html">Календарь</a><a class="btn" href="requests.html">Заявки</a><a class="btn" href="ai.html">AI-помощник</a><a class="btn" href="history.html">История</a><a class="btn" href="profile.html">Профиль</a></div></aside>`;document.body.appendChild(d);d.querySelector('[data-close]').onclick=()=>d.remove()}));
 $$('.bell').forEach(b=>b.addEventListener('click',()=>toast('Новых уведомлений: 2')));
 $('#installBtn')?.addEventListener('click',()=>toast('В рабочем PWA здесь откроется системная установка'));
 
@@ -20,7 +21,7 @@ $$('.confirmBtn').forEach(b=>b.onclick=()=>{b.textContent='✓ Подтверж�
 $$('.rejectBtn').forEach(b=>b.onclick=()=>{b.textContent='Отклонено';toast('Заявка отклонена')});
 
 const pf=$('#portfolioFiles');
-if(pf)pf.onchange=()=>{const g=$('#gallery');g.innerHTML='';[...pf.files].slice(0,30).forEach(f=>{const r=new FileReader();r.onload=()=>{const d=document.createElement('div');d.style.cssText='aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:1px solid #e8e9ed;background:#fff';d.innerHTML=`<img src="${r.result}" style="width:100%;height:100%;object-fit:cover">`;g.appendChild(d)};r.readAsDataURL(f)})};
+if(pf)pf.onchange=()=>{const g=$('#gallery');g.innerHTML='';[...pf.files].slice(0,30).forEach(f=>{const r=new FileReader();r.onload=()=>{const d=document.createElement('div');d.style.cssText='aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:1px solid #e8e4df;background:#fff;box-shadow:0 8px 20px rgba(45,39,34,.05)';d.innerHTML=`<img src="${r.result}" style="width:100%;height:100%;object-fit:cover">`;g.appendChild(d)};r.readAsDataURL(f)})};
 
 const calendar=$('#monthCalendar');
 if(calendar){
