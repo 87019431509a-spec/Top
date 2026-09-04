@@ -1,1 +1,21 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lash Studio Анны — Отзыв</title><link rel="stylesheet" href="styles.css"></head><body><main class="auth-shell" style="padding-top:14px"><div class="auth-brand"><a class="logo" href="public-preview.html">LASH STUDIO</a><a class="btn" href="public-preview.html">Закрыть</a></div><section class="auth-card" style="margin-top:18px"><span class="eyebrow">Подтверждённый визит</span><h1>Как всё прошло?</h1><p class="subtitle">Классическое наращивание · Анна Иванова · 3 сентября</p><div class="manage-card" style="margin-top:18px"><h2>Оценка</h2><div style="display:flex;gap:8px;margin-top:12px"><button class="btn soft" style="font-size:24px;min-width:52px">★</button><button class="btn soft" style="font-size:24px;min-width:52px">★</button><button class="btn soft" style="font-size:24px;min-width:52px">★</button><button class="btn soft" style="font-size:24px;min-width:52px">★</button><button class="btn soft" style="font-size:24px;min-width:52px">★</button></div></div><div class="auth-fields" style="margin-top:14px"><label>Комментарий<textarea style="min-height:120px;border:1px solid #e7e9f0;border-radius:16px;padding:14px" placeholder="Что особенно понравилось?"></textarea></label><label>Фото, если хотите<input type="file" accept="image/*" style="padding-top:14px"></label></div><button class="btn primary" style="width:100%;margin-top:18px" onclick="toast('Спасибо! Отзыв опубликован как подтверждённый визит')">Отправить отзыв</button><p class="subtitle" style="font-size:13px!important;text-align:center">Один завершённый визит — один отзыв. Мастер сможет ответить, но не изменить ваш текст.</p></section></main><div class="toast" id="toast"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="PAZLIX — онлайн-запись и рабочий кабинет студии.">
+  <title>PAZLIX — Отзыв о визите</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="prototype-store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="client-review" data-kind="public">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="shell"><header class="public-header"><a class="icon-btn" href="public-preview.html" aria-label="Назад"><svg class="icon  " aria-hidden="true"><use href="icons.svg#left"></use></svg></a><a href="public-preview.html" class="studio-brand">LASH STUDIO</a><a class="btn text-btn" href="client-bookings.html">Мои записи</a></header><main id="main" class="page public-page "><div class="page-heading"><div><h1>Как всё прошло?</h1><p class="subtitle">Поделитесь впечатлениями после визита</p></div></div><div id="reviewFormContent"></div></main></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="actionSheet" class="bottom-sheet" aria-labelledby="sheetTitle"><div class="sheet-top"><span class="sheet-handle"></span><button type="button" class="icon-btn" data-action="close-sheet" aria-label="Закрыть окно"><svg class="icon  " aria-hidden="true"><use href="icons.svg#close"></use></svg></button></div><div id="sheetContent"></div></dialog>
+</body>
+</html>

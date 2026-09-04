@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="PAZLIX — онлайн-запись и рабочий кабинет студии.">
+  <title>PAZLIX — Конфиденциальность</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="prototype-store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="privacy" data-kind="auth">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="shell"><main id="main" class="auth-shell"><div class="auth-brand"><a class="logo" href="login.html">PAZLIX<span class="brand-mark"></span></a><span class="eyebrow">Рабочий кабинет</span></div><section class="auth-card"><div class="page-heading"><div><h1>Конфиденциальность</h1></div></div><p>В этом прототипе настройки и демонстрационные записи хранятся только в браузере на вашем устройстве. Пароли и ключи Telegram не сохраняются. Не вводите реальные данные клиентов. Перед запуском сервиса владелец добавит политику обработки персональных данных.</p><a class="btn soft" href="register.html">К регистрации</a></section><p class="demo-note">UI-прототип · изменения сохраняются на этом устройстве</p></main></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="actionSheet" class="bottom-sheet" aria-labelledby="sheetTitle"><div class="sheet-top"><span class="sheet-handle"></span><button type="button" class="icon-btn" data-action="close-sheet" aria-label="Закрыть окно"><svg class="icon  " aria-hidden="true"><use href="icons.svg#close"></use></svg></button></div><div id="sheetContent"></div></dialog>
+</body>
+</html>

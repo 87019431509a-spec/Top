@@ -1,1 +1,21 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>PAZLIX — Превью Telegram-бота</title><link rel="stylesheet" href="styles.css"></head><body><main class="auth-shell" style="padding-top:14px"><div class="auth-brand"><a class="logo" href="telegram.html">PAZLIX<span class="brand-mark"></span></a><a class="btn" href="telegram.html">Назад</a></div><section class="auth-card" style="margin-top:18px"><span class="eyebrow">Публичный Telegram-бот</span><h1>Lash Studio Анны</h1><p class="subtitle">Так клиент увидит приветствие и быстрые действия после /start.</p><div class="manage-card" style="margin-top:18px;text-align:center"><div class="public-avatar" style="margin:0 auto 14px">A</div><h2>Добро пожаловать!</h2><p>Запишитесь на услугу, посмотрите работы или откройте свои записи.</p></div><div class="manage-stack" style="margin-top:12px"><a class="btn primary" href="public-preview.html">Открыть</a><a class="btn" href="client-booking.html">Записаться</a><a class="btn" href="public-preview.html#services">Услуги</a><a class="btn" href="public-preview.html#works">Мои работы</a><a class="btn" href="client-bookings.html">Мои записи</a></div><section class="manage-card" style="margin-top:14px"><h2>Сервисные сообщения</h2><p>Подтверждение, напоминания, переносы и отмены приходят сюда же, но логика записи остаётся общей с сайтом и Web App.</p></section></section></main><div class="toast" id="toast"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="PAZLIX — онлайн-запись и рабочий кабинет студии.">
+  <title>PAZLIX — Предпросмотр Telegram</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="prototype-store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="telegram-preview" data-kind="public">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="shell"><header class="public-header"><a class="icon-btn" href="public-preview.html" aria-label="Назад"><svg class="icon  " aria-hidden="true"><use href="icons.svg#left"></use></svg></a><a href="public-preview.html" class="studio-brand">LASH STUDIO</a><a class="btn text-btn" href="client-bookings.html">Мои записи</a></header><main id="main" class="page public-page "><div class="page-heading"><div><h1>Бот вашей студии</h1><p class="subtitle">Приветствие и быстрые действия для клиентов</p></div></div><section class="card "><div class="title-with-icon"><span class="icon-wrap icon-blue"><svg class="icon  " aria-hidden="true"><use href="icons.svg#telegram"></use></svg></span><div><h2 data-project-name>Lash Studio Анны</h2><small>Демонстрация Telegram-бота</small></div></div><div class="telegram-message"><p id="telegramWelcome">Здравствуйте! Выберите услугу или посмотрите свободное время.</p></div><div class="telegram-keyboard"><a class="btn soft" href="client-booking.html">Записаться</a><a class="btn soft" href="public-preview.html#services">Услуги</a><a class="btn soft" href="public-preview.html#works">Мои работы</a><a class="btn soft" href="client-bookings.html">Мои записи</a></div></section></main></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="actionSheet" class="bottom-sheet" aria-labelledby="sheetTitle"><div class="sheet-top"><span class="sheet-handle"></span><button type="button" class="icon-btn" data-action="close-sheet" aria-label="Закрыть окно"><svg class="icon  " aria-hidden="true"><use href="icons.svg#close"></use></svg></button></div><div id="sheetContent"></div></dialog>
+</body>
+</html>

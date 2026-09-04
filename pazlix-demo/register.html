@@ -1,1 +1,21 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>PAZLIX — Регистрация</title><link rel="stylesheet" href="styles.css"></head><body><main class="auth-shell"><div class="auth-brand"><a class="logo" href="login.html">PAZLIX<span class="brand-mark"></span></a><button class="auth-help" aria-label="Помощь">?</button></div><section class="auth-card"><span class="eyebrow">Новый проект</span><h1>Создайте кабинет</h1><p class="subtitle">Сначала создадим защищённый аккаунт. После подтверждения почты AI-помощник соберёт проект по шагам.</p><div class="auth-fields"><label>Ваше имя<input autocomplete="name" placeholder="Анна"></label><label>Email<input type="email" autocomplete="email" placeholder="name@example.com"></label><label>Пароль<input type="password" autocomplete="new-password" placeholder="Минимум 8 символов"></label><label>Повторите пароль<input type="password" autocomplete="new-password" placeholder="Ещё раз пароль"></label></div><label class="check-row"><input type="checkbox" checked><span>Я принимаю пользовательское соглашение и политику конфиденциальности.</span></label><div class="auth-actions"><a class="btn primary" href="verify-email.html">Продолжить</a></div><div class="auth-note">Уже есть аккаунт? <a href="login.html">Войти</a></div></section></main><div class="toast" id="toast"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="PAZLIX — онлайн-запись и рабочий кабинет студии.">
+  <title>PAZLIX — Регистрация</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="prototype-store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="register" data-kind="auth">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="shell"><main id="main" class="auth-shell"><div class="auth-brand"><a class="logo" href="login.html">PAZLIX<span class="brand-mark"></span></a><span class="eyebrow">Рабочий кабинет</span></div><section class="auth-card"><div class="page-heading"><div><h1>Создайте кабинет</h1><p class="subtitle">Начните с аккаунта. Настроить студию поможет AI-помощник.</p></div></div><form data-form="register"><label class="field"><span>Ваше имя</span><input name="name" type="text" value="" required autocomplete="given-name" placeholder="Анна"></label><label class="field"><span>Email</span><input name="email" type="email" value="" required autocomplete="email" placeholder="anna@example.com"></label><label class="field"><span>Пароль</span><input name="password" type="password" value="" required minlength="8" autocomplete="new-password" placeholder="Не менее 8 символов"></label><label class="field"><span>Повторите пароль</span><input name="repeat" type="password" value="" required minlength="8" autocomplete="new-password"></label><label class="check-row"><input name="consent" type="checkbox" required><span>Принимаю <a href="terms.html">условия использования</a> и <a href="privacy.html">политику конфиденциальности</a>.</span></label><div class="form-error" role="alert"></div><button class="btn primary full" type="submit">Продолжить<svg class="icon  " aria-hidden="true"><use href="icons.svg#right"></use></svg></button></form><p class="auth-note">Уже есть аккаунт? <a href="login.html">Войти</a></p></section><p class="demo-note">UI-прототип · изменения сохраняются на этом устройстве</p></main></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="actionSheet" class="bottom-sheet" aria-labelledby="sheetTitle"><div class="sheet-top"><span class="sheet-handle"></span><button type="button" class="icon-btn" data-action="close-sheet" aria-label="Закрыть окно"><svg class="icon  " aria-hidden="true"><use href="icons.svg#close"></use></svg></button></div><div id="sheetContent"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+ <symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+ <symbol id="left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+ <symbol id="right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+ <symbol id="up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+ <symbol id="down" viewBox="0 0 24 24"><path d="m6 10 6 6 6-6"/></symbol>
+ <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+ <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+ <symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18M8 14h1M15 14h1M8 17h1"/></symbol>
+ <symbol id="bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></symbol>
+ <symbol id="inbox" viewBox="0 0 24 24"><path d="M5 4h14l3 10v6H2v-6L5 4ZM2 14h6l2 3h4l2-3h6M8 8h8"/></symbol>
+ <symbol id="history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 3 8M3 4v7h7M12 7v5l3 2"/></symbol>
+ <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+ <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 4 5v1"/></symbol>
+ <symbol id="spark" viewBox="0 0 24 24"><path d="m11 3 2.5 6.5L20 12l-6.5 2.5L11 21l-2.5-6.5L2 12l6.5-2.5L11 3ZM20 2v4M18 4h4"/></symbol>
+ <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+ <symbol id="settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--surface,white)"/><circle cx="15" cy="17" r="3" fill="var(--surface,white)"/></symbol>
+ <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+ <symbol id="bag" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="14" rx="3"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></symbol>
+ <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3-8 3v5c0 5 8 10 8 10s8-5 8-10V6l-8-3Z"/><path d="m8 11 3 3 5-5"/></symbol>
+ <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+ <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></symbol>
+ <symbol id="lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></symbol>
+ <symbol id="card" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 9h20M6 15h4"/></symbol>
+ <symbol id="type" viewBox="0 0 24 24"><path d="M4 6V3h16v3M12 3v18M8 21h8"/></symbol>
+ <symbol id="image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-5 5 5"/></symbol>
+ <symbol id="telegram" viewBox="0 0 24 24"><path d="m21 3-3 18-6-5-4 3 1-6L3 10 21 3ZM9 13l8-6"/></symbol>
+ <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+ <symbol id="edit" viewBox="0 0 24 24"><path d="m14 5 5 5M4 20l5-1L21 7a3.5 3.5 0 0 0-5-5L4 14v6Z"/></symbol>
+ <symbol id="filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5Z"/></symbol>
+ <symbol id="search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></symbol>
+ <symbol id="send" viewBox="0 0 24 24"><path d="m3 3 18 9-18 9 4-9-4-9ZM7 12h14"/></symbol>
+ <symbol id="phone" viewBox="0 0 24 24"><path d="m5 3 4 1 1 5-3 2a15 15 0 0 0 6 6l2-3 5 1 1 4c-1 5-8 1-12-3S1 4 5 3Z"/></symbol>
+ <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+ <symbol id="trash" viewBox="0 0 24 24"><path d="M3 6h18M5 6l1 15h12l1-15M9 6V3h6v3M10 10v7M14 10v7"/></symbol>
+ <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+ <symbol id="share" viewBox="0 0 24 24"><path d="M12 15V2m-4 4 4-4 4 4M6 10H3v11h18V10h-3"/></symbol>
+</svg>

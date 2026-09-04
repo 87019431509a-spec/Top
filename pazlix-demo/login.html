@@ -1,1 +1,21 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>PAZLIX — Вход</title><link rel="stylesheet" href="styles.css"></head><body><main class="auth-shell"><div class="auth-brand"><a class="logo" href="login.html">PAZLIX<span class="brand-mark"></span></a><button class="auth-help" aria-label="Помощь">?</button></div><section class="auth-card"><span class="eyebrow">Рабочий кабинет</span><h1>Войти в PAZLIX</h1><p class="subtitle">Записи, сайт и клиентские каналы — в одном кабинете.</p><div class="auth-fields"><label>Email<input type="email" placeholder="name@example.com"></label><label>Пароль<input type="password" placeholder="Введите пароль"></label></div><div class="auth-actions"><a class="btn primary" href="index.html">Войти</a><button class="btn">Забыли пароль?</button></div><div class="auth-note">Нет аккаунта? <a href="register.html">Создать проект</a></div></section></main><div class="toast" id="toast"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="PAZLIX — онлайн-запись и рабочий кабинет студии.">
+  <title>PAZLIX — Вход</title>
+  <link rel="icon" href="app-icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="prototype-store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="login" data-kind="auth">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="shell"><main id="main" class="auth-shell"><div class="auth-brand"><a class="logo" href="login.html">PAZLIX<span class="brand-mark"></span></a><span class="eyebrow">Рабочий кабинет</span></div><section class="auth-card"><div class="page-heading"><div><h1>С возвращением</h1><p class="subtitle">Войдите в рабочий кабинет</p></div></div><form data-form="login"><label class="field"><span>Email</span><input name="email" type="email" value="" required autocomplete="email" placeholder="anna@example.com"></label><label class="field"><span>Пароль</span><input name="password" type="password" value="" required minlength="8" autocomplete="current-password" placeholder="Не менее 8 символов"></label><div class="form-error" role="alert"></div><button class="btn primary full" type="submit">Войти</button></form><a class="btn text-btn full" href="forgot-password.html">Забыли пароль?</a><p class="auth-note">Впервые здесь? <a href="register.html">Создать кабинет</a></p><div class="note"><span class="icon-wrap icon-blue"><svg class="icon  " aria-hidden="true"><use href="icons.svg#info"></use></svg></span><p>Демо-вход: любой email и пароль от 8 символов. Пароль не сохраняется.</p></div></section><p class="demo-note">UI-прототип · изменения сохраняются на этом устройстве</p></main></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="actionSheet" class="bottom-sheet" aria-labelledby="sheetTitle"><div class="sheet-top"><span class="sheet-handle"></span><button type="button" class="icon-btn" data-action="close-sheet" aria-label="Закрыть окно"><svg class="icon  " aria-hidden="true"><use href="icons.svg#close"></use></svg></button></div><div id="sheetContent"></div></dialog>
+</body>
+</html>
